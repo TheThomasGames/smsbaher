@@ -124,7 +124,7 @@ def start():
         try:
             requests.post(
                 "https://uss.rozetka.com.ua/session/auth/phone-code-send-signup",
-                 json={'country': "UA", 'lang': "ru", 'phone': phone, 'accept_terms': 'true'},
+                 json={'country': "UA", 'lang': "ru", 'phone': phone[2:], 'accept_terms': 'true'},
                 headers=head,
                 timeout=2,
             )
