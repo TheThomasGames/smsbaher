@@ -432,7 +432,7 @@ def start():
             requests.post(
                 "https://passport.twitch.tv/protected_register",
                 json={
-                    'birthday': {'day': 11, 'month': 1, 'year': 2002, 'isOver18': true},
+                    'birthday': {'day': 11, 'month': 1, 'year': 2002, 'isOver18': 'true'},
                     'client_id': "kimne78kx3ncx6brgo4mv6wki5h1ko",
                     'integrity_token': "v4.local.XXxIB-MkWsBXhniQj0DI35UH1zPn90nXDsRwd_KKI9dNRxBdfGcR6E98x8uOuD_ETzUcFmy-llwQZm2ItjQk5OfZDJ7j41yhG5QoAupHAst4k1HAfhX0SGDqGzP0wUbh8W8IyOJgf2TeZUCrcXCapFPdZN8uf0Rhmd16n1htWb3sZu0nv5buQUscNPjjcsx-igD4Xha4HTmUGEQZxPgsim5mMLXWDC-5XeAvG5j0LSQdifE85rDfaQnpqqEVQ70LtYtKJYcnfSd8FCThklU1rKVGZE1DerJiPnDVac5J4SDp0h2dHwId4K0CWcq7ApGm9c4EryvbPWvToefC0fixm8TdG1iqypnQfYQta9vTJsgM8x3oLIST0U-HvWxXs-Ba0WfP_cuaE5ysFqwGBRGHJeXgrPigGCuKS3tkeaZramxYrI1qM9VwHo2W9op-VFy4bvThcZ6dw4F-MILvt0N_qqJ8mOL5BcyyeJAg4VgusqkhQT4CsFiVpMH0Eo9tAK2wNJO2qlwh-_T13ZM",
                     'is_password_guide': "nist",
