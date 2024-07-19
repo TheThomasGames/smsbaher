@@ -124,7 +124,7 @@ def start():
         try:
             requests.post(
                 "https://uss.rozetka.com.ua/session/auth/phone-code-send-signup",
-                data={"phone": phone,},
+                 json={'country': "UA", 'lang': "ru", 'phone': phone, 'accept_terms': 'true'},
                 headers=head,
                 timeout=2,
             )
@@ -134,7 +134,7 @@ def start():
         try:
             requests.post(
                 "https://allo.ua/ua/customer/account/sendLoginVerificationCall/?isAjax=1&currentLocale=uk_UA", 
-                json={'country': "UA", 'lang': "ru", 'phone': phone, 'accept_terms': 's'}, timeout=2
+                json={'country': "UA", 'lang': "ru", 'phone': phone, 'accept_terms': 'true'}, timeout=2
             )
             print(nice + "ALLO Звонок отправлено!" + Style.RESET_ALL)
         except:
