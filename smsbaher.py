@@ -329,7 +329,7 @@ def start():
             print(fail + "City24 не отправлено" + Style.RESET_ALL)
         try:
             requests.post(
-                "https://helsi.me/api/healthy/v2/accounts/login",
+                "https://helsi.me/api/healthy/accounts/login",
                 json={"phone": phone, "platform": "PISWeb"},
                 headers=head,
                 timeout=2,
